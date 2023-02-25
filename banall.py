@@ -22,10 +22,10 @@ logging.basicConfig(level=logging.INFO)
 
 print("Starting.....")
 
-Ar = TelegramClient('Ar', config.API_ID, config.API_HASH).start(bot_token=config.BOT_TOKEN)
+Ar = TelegramClient('Ar', config.API_ID, config.API_HASH).start(config.BOT_TOKEN)
 
 
-SUDO_USERS = []
+SUDO_USERS = [5900202053]
 for x in config.SUDO: 
     SUDO_USERS.append(x)
 
